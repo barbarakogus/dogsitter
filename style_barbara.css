@@ -1,0 +1,260 @@
+body {
+    font-family: 'Architects Daughter', cursive;
+}
+.header {
+    background: linear-gradient(#ADD8E6, #E0FFFF);
+    text-align: center;
+    font-weight: bold;
+}
+.header h1 {
+    font-size: 26px;
+    padding: 20px 0;
+}
+.header p {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.header p:before {
+    content: "\1F43E  ";
+}
+.header p:after {
+    content: " 	\1F43E";
+}
+.imagem-header-right {
+    width: 70px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.imagem-header-left {
+    width: 70px;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+main {
+    background: #E0FFFF;
+}
+.titulo-principal{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    text-decoration-line: underline;
+}
+.conteudo-main {
+    width: 940px;
+    margin: 0 auto;
+}
+main p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.0;
+}
+p strong {
+    font-weight: bold;
+}
+.serviços {
+    width: 940px;
+    margin: 30px auto;
+}
+.serviços ul {
+    text-align: center;
+    margin: 1em auto;
+}
+.serviços li {
+    display: inline-block; 
+    width: 45%;
+    box-sizing: border-box;    
+    border: 2px solid black;
+    border-radius: 25px;
+    vertical-align: top;
+    margin-right: 1em;
+}
+.titulo-serviços {
+    font-weight: bold;
+    font-size: 20px;
+}
+.imagem-dogwalker {
+    width: 30%;
+    border-radius: 30px;
+}
+.imagem-dogsitter {
+    width: 30%;
+    border-radius: 30px;
+}
+.preços-serviços {
+    font-weight: bold;
+}
+.serviços li:hover {
+    border-color: cornflowerblue;
+}
+.serviços li:hover .preços-serviços {
+    color: cornflowerblue;
+    font-size: 26px;
+}
+.serviços li:hover .titulo-serviços {
+    color: cornflowerblue;
+    font-size: 26px;
+}
+nav li {
+    display: inline;
+}
+.menu-navegacao {
+    text-align: center;
+    padding: 30px;
+}
+nav a {
+    font-size: 24px;
+    padding-right: 30px;
+    color: darkblue;
+} 
+nav a:hover {
+    font-weight: bold;
+}
+.footer {
+    background: linear-gradient(#E0FFFF, #ADD8E6);
+    text-align: center;
+    font-weight: bold;
+}
+.footer h1 {
+    font-size: 26px;
+    padding: 20px 0;
+    display: inline;
+}
+.footer p {
+    font-size: 22px;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer p:before {
+    content: "\1F43E  ";
+}
+.footer p:after {
+    content: " 	\1F43E";
+}
+.imagem-footer-right {
+    width: 70px;
+    border-radius: 30px;
+    position: absolute;
+    vertical-align: top;
+    right: 2em;
+}
+.imagem-footer-left {
+    width: 70px;
+    border-radius: 30px;
+    position: absolute;
+    vertical-align: top;
+    left: 2em;
+}    
+/*CSS para a pag de contato */
+
+.conteudo-principal-contato {
+    width: 940px;
+    margin: 0 auto;
+}
+.input-padrao {
+    display: block;
+    margin: 10px 0 20px 0; 
+    width: 30%;
+}
+form label, legend {
+    font-size: 22px;
+    display: block;
+}
+.input-radio {
+    margin: 10px 10px 0 0;
+}
+select {
+    margin: 10px 0;
+    font-size: 18px;
+}
+#pergunta-options, .checkbox {
+    padding-top: 20px;
+}
+.enviar {
+    margin: 20px 0;
+    padding: 10px 10px;
+    width: 30%;
+    background: skyblue;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 1s all;
+}
+.enviar:hover {
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+}
+/*CSS pagina Galeria*/
+
+.imagens-clientes {
+    width: 27%;
+    padding: 0 1em;
+    border-radius: 50px;
+}
+.imagens-clientes:hover {
+    width: 33%;
+}
+.galeria-clientes {
+    width: 940px;
+    margin: 1em auto;
+
+}
+li {
+    text-align: center;
+    margin: 0 auto;
+}
+.titulo-clientes {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+
+@media screen and (max-width:480px){
+    .header {
+        font-size: 2em;
+    }
+    .imagem-header-right, .imagem-header-left, .imagem-footer-right, .imagem-footer-left {
+        width: 1em;
+    }
+    .conteudo-main, .serviços, .conteudo-principal-contato {
+        width: auto;
+        margin: 0 1em;
+    }
+    .serviços {
+        display: block;
+    }
+    .serviços li {
+        width: 75%;
+        margin: 1em auto;
+    }
+    nav li {
+        display: block;
+        margin-bottom: 1em;
+    }
+    .galeria-clientes {
+        width: auto;
+    }
+    .titulo-clientes {
+        text-align: center;
+    }
+    .imagens-clientes {
+        border-radius: 30px;
+    }
+    #mensagem {
+        width: 177px;
+        height: 150px;
+    }
+    .enviar {
+        width: 40%;
+    }
+    legend {
+        text-align: justify;
+        line-height: 1.2;
+    }
+}
