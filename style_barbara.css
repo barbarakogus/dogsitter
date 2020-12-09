@@ -189,6 +189,24 @@ select {
     background-color: cornflowerblue;
     transform: scale(1.1);
 }
+.tabela {
+    border: 2px solid black;
+}
+.cabecalho-tabela {
+    padding: 10px 0 10px 10px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.tabela-body {
+    border: 1px solid black;
+}
+.conteudo-tabela {
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
 /*CSS pagina Galeria*/
 
 .imagens-clientes {
