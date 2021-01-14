@@ -207,6 +207,11 @@ select {
     font-size: 18px;
     text-align: center;
 }
+.span {
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
 
 /*CSS pagina Galeria*/
 
