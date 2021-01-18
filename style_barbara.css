@@ -163,6 +163,11 @@ form label, legend {
     font-size: 22px;
     display: block;
 }
+.caracteres {
+    text-align: justify;
+    font-size: 20px;
+    display: inline;
+}
 .input-radio {
     margin: 10px 10px 0 0;
 }
@@ -207,10 +212,14 @@ select {
     font-size: 18px;
     text-align: center;
 }
-.span {
+.span, #numero-maximo {
     font-weight: bold;
     color: red;
     font-size: 20px;
+}
+.fadeOut {
+    opacity: 0;
+    transition: 0.5s;
 }
 
 /*CSS pagina Galeria*/

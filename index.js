@@ -1,15 +1,15 @@
 const enviarFormulario = document.querySelector(".enviar");
 
-const tabela = document.querySelector(".tabela-body");
+const tabelaBody = document.querySelector(".tabela-body");
+
+let contadorMensagem = 0;
 
 enviarFormulario.addEventListener("click", function(event){
     event.preventDefault();
 
     const form = document.querySelector("form");
 
-    const cliente = obterDadosDoFormulario (form);
-
-    validarFormulario (cliente);
+    const cliente = obterDadosDoFormulario(form);
     
     if(!validarFormulario(cliente)){
         return;
@@ -17,13 +17,15 @@ enviarFormulario.addEventListener("click", function(event){
 
     const clienteTr = criarTr(cliente);
  
-    tabela.appendChild(clienteTr);
+    tabelaBody.appendChild(clienteTr);
 
     form.reset();
+    const caracteres = document.querySelector("#numero-maximo");
+    caracteres.innerHTML = "";
 });
 
-function obterDadosDoFormulario (form){
-    let cliente = {
+function obterDadosDoFormulario(form){
+    const cliente = {
         nome: form.nome.value,
         nomePet: form.nomePet.value,
         email: form.email.value,
@@ -42,7 +44,7 @@ function obterDadosDoFormulario (form){
 }
 
 function criarTr (cliente){
-    let tr = document.createElement("tr");
+    const tr = document.createElement("tr");
 
     tr.appendChild(criarTd(cliente.nome, "conteudo-tabela"));
     tr.appendChild(criarTd(cliente.nomePet, "conteudo-tabela"));
@@ -57,33 +59,57 @@ function criarTr (cliente){
 }
 
 function criarTd (dado,classe){
-    let td = document.createElement("td");
+    const td = document.createElement("td");
     td.textContent = dado;
     td.classList.add(classe);
     return td;
 }
 
-function validarFormulario (cliente, span){
+function validarFormulario (cliente){
     let estaValido = true;
     const span = document.querySelectorAll(".span");   
-    
-    if(cliente.nome.length == ""){
+    if(cliente.nome.length == 0){ //apenas no JS "" == 0;
         span[0].textContent = "O campo nome é indispensável";
         estaValido = false;
-        return;
+    }else {
+        span[0].textContent = ""; 
     }
     if(cliente.email.length == ""){
         span[1].textContent = "O campo email é indispensável";
         estaValido = false;
-        return;
+    }else if(!validaEmail(cliente.email)){
+        span[1].textContent = "O campo email está fora do padrão";
+        estaValido = false;
+    }
+    else{
+        span[1].textContent = "";
     }
     if(cliente.telefone.length == ""){
         span[2].textContent = "O campo telefone é indispensável";
         estaValido = false;
-        return;
-    };
+    }else if(isNaN(cliente.telefone)){
+        span[2].textContent = "O campo telefone deve conter apenas números";
+        estaValido = false;
+    }else{
+        span[2].textContent = "";
+    }  
     return estaValido;
 }
+
+function validaEmail(email) {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function maximoCaracteresTextArea(){
+    const textArea = document.querySelector("#mensagem");
+    const caracteres = document.querySelector("#numero-maximo");
+
+    textArea.addEventListener("input", function(){
+        contadorMensagem++;
+        caracteres.innerHTML = "(" + contadorMensagem + ")";
+    })
+};
 
 
 

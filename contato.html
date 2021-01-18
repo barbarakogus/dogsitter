@@ -36,8 +36,10 @@
                 <input type="tel" id="telefone" class="input-padrao" name="telefone" required placeholder="(xx) xxxx xxxx">
 
                 <label for="mensagem">Está com dúvida ou tem alguma observação que gostaria de mencionar? Escreva aqui!</label>
-                <textarea cols="48" rows="10" id="mensagem" class="input-padrao" name="mensagem"></textarea>
-
+                <p class="caracteres">Numero máximo de caracteres: 50.</p>
+                <p class="caracteres" id="numero-maximo"></p>
+                <textarea cols="48" rows="10" id="mensagem" class="input-padrao" name="mensagem" maxlength="50"></textarea>
+                
                 <fieldset>
                     <legend>Qual a melhor forma de contato para você?</legend>
                     <label for="radio-email"><input type="radio" id="radio-email" name="contato" value="email" class="input-radio">Email</label>
@@ -102,6 +104,7 @@
         </footer>
 
         <script src="index.js"></script>
+        <script src="removerPaciente.js"></script>
      
     </body>
 </html>
