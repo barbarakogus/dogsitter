@@ -207,10 +207,17 @@ select {
 .tabela-body {
     border: 1px solid black;
 }
-.conteudo-tabela {
+td {
     padding: 10px 10px 10px 10px;
     font-size: 18px;
     text-align: center;
+}
+#filtro-tabela {
+    margin: 10px 0 20px 235px;
+    border-radius: 10px; 
+    border: none;
+    text-align: justify;
+    width: 15%;
 }
 .span, #numero-maximo {
     font-weight: bold;
@@ -221,7 +228,9 @@ select {
     opacity: 0;
     transition: 0.5s;
 }
-
+.invisivel {
+    display: none;
+}
 /*CSS pagina Galeria*/
 
 .imagens-clientes {

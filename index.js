@@ -22,6 +22,7 @@ enviarFormulario.addEventListener("click", function(event){
     form.reset();
     const caracteres = document.querySelector("#numero-maximo");
     caracteres.innerHTML = "";
+    
 });
 
 function obterDadosDoFormulario(form){
@@ -46,14 +47,16 @@ function obterDadosDoFormulario(form){
 function criarTr (cliente){
     const tr = document.createElement("tr");
 
-    tr.appendChild(criarTd(cliente.nome, "conteudo-tabela"));
-    tr.appendChild(criarTd(cliente.nomePet, "conteudo-tabela"));
-    tr.appendChild(criarTd(cliente.email, "conteudo-tabela"));
-    tr.appendChild(criarTd(cliente.telefone, "conteudo-tabela"));
-    tr.appendChild(criarTd(cliente.mensagem, "conteudo-tabela"));
-    tr.appendChild(criarTd(cliente.contato, "conteudo-tabela"));
-    tr.appendChild(criarTd(cliente.periodo, "conteudo-tabela"));
-    tr.appendChild(criarTd(cliente.checkbox, "conteudo-tabela"));
+    tr.appendChild(criarTd(cliente.nome, "info-nome-proprietario"));
+    tr.appendChild(criarTd(cliente.nomePet, "info-nome-pet"));
+    tr.appendChild(criarTd(cliente.email, "info-email"));
+    tr.appendChild(criarTd(cliente.telefone, "info-telefone"));
+    tr.appendChild(criarTd(cliente.mensagem, "info-mensagem"));
+    tr.appendChild(criarTd(cliente.contato, "info-contato"));
+    tr.appendChild(criarTd(cliente.periodo, "info-periodo"));
+    tr.appendChild(criarTd(cliente.checkbox, "info-checkbox"));
+
+    tr.classList.add("conteudo-tabela");
 
     return tr;
 }
@@ -111,5 +114,6 @@ function maximoCaracteresTextArea(){
     })
 };
 
+maximoCaracteresTextArea();
 
 

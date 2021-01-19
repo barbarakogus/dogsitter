@@ -63,6 +63,7 @@
                 <input type="submit" value="Enviar formulário" class="enviar">   
             </form>
             <table class="tabela">
+                <input type="text" name="filtro" id="filtro-tabela" placeholder="Proprietário ou Pet">
                 <thead>
                     <tr>
                         <th class="cabecalho-tabela">Nome</th>
@@ -76,15 +77,15 @@
                     </tr>
                 </thead>
                 <tbody class="tabela-body">
-                    <tr>
-                        <td class="conteudo-tabela">Barbara Kógus</td>
-                        <td class="conteudo-tabela">Preta e Sebastian</td>
-                        <td class="conteudo-tabela">barbarakogus@gmail.com</td>
-                        <td class="conteudo-tabela">76 565 2274</td>
-                        <td class="conteudo-tabela">-</td>
-                        <td class="conteudo-tabela">WhatsApp</td>
-                        <td class="conteudo-tabela">Manhã</td>
-                        <td class="conteudo-tabela">Sim</td>
+                    <tr class="conteudo-tabela">
+                        <td class="info-nome-proprietario">Barbara Kógus</td>
+                        <td class="info-nome-pet">Preta e Sebastian</td>
+                        <td class="info-email">barbarakogus@gmail.com</td>
+                        <td class="info-telefone">76 565 2274</td>
+                        <td class="info-mensagem">-</td>
+                        <td class="info-contato">WhatsApp</td>
+                        <td class="info-periodo">Manhã</td>
+                        <td class="info-checkbox">Sim</td>
                     </tr>
                 </tbody>
             </table>
@@ -105,6 +106,7 @@
 
         <script src="index.js"></script>
         <script src="removerPaciente.js"></script>
+        <script src="filtrarTabela.js"></script>
      
     </body>
 </html>
