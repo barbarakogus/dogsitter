@@ -8,22 +8,24 @@ enviarFormulario.addEventListener("click", function(event){
     event.preventDefault();
 
     const form = document.querySelector("form");
-
     const cliente = obterDadosDoFormulario(form);
-    
+
     if(!validarFormulario(cliente)){
         return;
     };
 
-    const clienteTr = criarTr(cliente);
- 
-    tabelaBody.appendChild(clienteTr);
-
+    adicionarClienteTabela (cliente);
+    
     form.reset();
     const caracteres = document.querySelector("#numero-maximo");
     caracteres.innerHTML = "";
     
 });
+
+function adicionarClienteTabela (cliente){
+    const clienteTr = criarTr(cliente);
+    tabelaBody.appendChild(clienteTr);
+}
 
 function obterDadosDoFormulario(form){
     const cliente = {
@@ -108,8 +110,19 @@ function maximoCaracteresTextArea(){
     const textArea = document.querySelector("#mensagem");
     const caracteres = document.querySelector("#numero-maximo");
 
-    textArea.addEventListener("input", function(){
-        contadorMensagem++;
+    textArea.addEventListener("keydown", function(event){ //"input" - consegue ouvir que o teclado está sendo usadp, porém o keyDown consegue ler qual tecla está sendo pressionada.
+        let tecla = event.keyCode;
+        console.log(tecla);
+        if(tecla == 8){
+            console.log("entrei");
+            contadorMensagem -= 1;            
+        }else {
+            contadorMensagem++;
+        }
+
+        if(contadorMensagem < 0){
+            contadorMensagem = 0;
+        }    
         caracteres.innerHTML = "(" + contadorMensagem + ")";
     })
 };

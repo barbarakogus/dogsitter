@@ -150,7 +150,7 @@ nav a:hover {
 }    
 /*CSS para a pag de contato */
 
-.conteudo-principal-contato {
+.conteudo-principal-contato  {
     width: 940px;
     margin: 0 auto;
 }
@@ -178,7 +178,7 @@ select {
 #pergunta-options, .checkbox {
     padding-top: 20px;
 }
-.enviar {
+.enviar{
     margin: 20px 0;
     padding: 10px 10px;
     width: 30%;
@@ -218,6 +218,7 @@ td {
     border: none;
     text-align: justify;
     width: 15%;
+    cursor: auto;
 }
 .span, #numero-maximo {
     font-weight: bold;
@@ -231,6 +232,20 @@ td {
 .invisivel {
     display: none;
 }
+.buscar-paciente {
+    width: 15%;
+    margin: 20px 0 20px 235px;
+    padding: 10px 0;
+    background: skyblue;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.buscar-paciente:hover {
+    font-weight: bold;
+}
+
 /*CSS pagina Galeria*/
 
 .imagens-clientes {
