@@ -22,11 +22,6 @@ enviarFormulario.addEventListener("click", function(event){
     
 });
 
-function adicionarClienteTabela (cliente){
-    const clienteTr = criarTr(cliente);
-    tabelaBody.appendChild(clienteTr);
-}
-
 function obterDadosDoFormulario(form){
     const cliente = {
         nome: form.nome.value,
@@ -128,5 +123,10 @@ function maximoCaracteresTextArea(){
 };
 
 maximoCaracteresTextArea();
+
+function adicionarClienteTabela (cliente){
+    const clienteTr = criarTr(cliente);
+    tabelaBody.appendChild(clienteTr);
+}
 
 

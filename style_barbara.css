@@ -1,5 +1,5 @@
 body {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Crimson Text', serif;
 }
 .header {
     background: linear-gradient(#ADD8E6, #E0FFFF);
@@ -10,14 +10,14 @@ body {
     font-size: 26px;
     padding: 20px 0;
 }
-.header p {
+.header h2 {
     font-size: 22px;
     padding-bottom: 20px;
 }
-.header p:before {
+.header h2:before {
     content: "\1F43E  ";
 }
-.header p:after {
+.header h2:after {
     content: " 	\1F43E";
 }
 .imagem-header-right {
@@ -48,7 +48,7 @@ main {
     margin: 0 auto;
 }
 main p {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     line-height: 2.0;
 }
@@ -74,7 +74,7 @@ p strong {
 }
 .titulo-serviços {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 }
 .imagem-dogwalker {
     width: 30%;
@@ -123,15 +123,15 @@ nav a:hover {
     padding: 20px 0;
     display: inline;
 }
-.footer p {
+.footer h2 {
     font-size: 22px;
     padding: 20px 0;
     text-align: center;
 }
-.footer p:before {
+.footer h2:before {
     content: "\1F43E  ";
 }
-.footer p:after {
+.footer h2:after {
     content: " 	\1F43E";
 }
 .imagem-footer-right {

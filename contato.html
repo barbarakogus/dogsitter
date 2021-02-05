@@ -8,24 +8,23 @@
         <title>Contato - Bárbara KCógus</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style_barbara.css">
-        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header">
             <h1>Bárbara Kógus</h1>
-            <p>Dogwalker - Dogsitter</p>
-            <img class="imagem-header-right" src="imagens/rosto_cachorro.jpg">
-            <img class="imagem-header-left" src="imagens/rosto_cachorro.jpg">
+            <h2 lang="en">Dogwalker - Dogsitter</h2>
+            <img class="imagem-header-right" src="imagens/rosto_cachorro.jpg" alt="Logotipo do site, trata-se do rosto de um cachorro">
+            <img class="imagem-header-left" src="imagens/rosto_cachorro.jpg" alt="">
         </header>
         <main>
             <form class="conteudo-principal-contato">
                 <label for="nome-completo">Infome seu nome completo</label>
                 <span id="span-nome" class="span"></span>
-                <input type="text" id="nome-completo" class="input-padrao" name="nome" required>
+                <input type="text" id="nome-completo" class="input-padrao" name="nome" placeholder="Informe seu nome completo" required>
                 
-
                 <label for="nome-pet">Infome o nome do seu pet</label>
-                <input type="text" id="nome-pet" class="input-padrao" name="nomePet" required>
+                <input type="text" id="nome-pet" class="input-padrao" name="nomePet" placeholder="Informe o nome do seu Pet" required>
 
                 <label for="email">Informe seu email</label>
                 <span id="span-email" class="span"></span>
@@ -60,10 +59,10 @@
                     <label for="checkbox"><input id="checkbox" type="checkbox" name="cheackbox" checked>Gostaria de receber nossas novidades por email?</label>
                 </div>
 
-                <input type="submit" value="Enviar formulário" class="enviar">   
+                <input type="submit" value="Enviar formulário" class="enviar" role="enviar formulário">   
             </form>
             <table class="tabela">
-                <input type="text" name="filtro" id="filtro-tabela" placeholder="Proprietário ou Pet">
+                <input type="text" name="filtro" id="filtro-tabela" placeholder="Pesquisa por nome do proprietário ou pet">
                 <thead>
                     <tr>
                         <th class="cabecalho-tabela">Nome</th>
@@ -102,9 +101,9 @@
         </main>
         <footer class="footer">
             <h1>Bárbara Kógus</h1>
-            <img class="imagem-footer-right" src="imagens/rosto_cachorro.jpg">
-            <img class="imagem-footer-left" src="imagens/rosto_cachorro.jpg">
-            <p>Dogwalker - Dogsitter</p>
+            <img class="imagem-footer-right" src="imagens/rosto_cachorro.jpg" alt="">
+            <img class="imagem-footer-left" src="imagens/rosto_cachorro.jpg" alt="">
+            <h2 lang="en">Dogwalker - Dogsitter</h2>
         </footer>
 
         <script src="index.js"></script>
