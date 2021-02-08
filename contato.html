@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Contato - Bárbara KCógus</title>
+        <title>Contato - Bárbara Kógus</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style_barbara.css">
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
@@ -13,17 +13,17 @@
     <body>
         <header class="header">
             <h1>Bárbara Kógus</h1>
-            <h2 lang="en">Dogwalker - Dogsitter</h2>
+            <h2 lang="en">Dog Walker - Dog Sitter</h2>
             <img class="imagem-header-right" src="imagens/rosto_cachorro.jpg" alt="Logotipo do site, trata-se do rosto de um cachorro">
-            <img class="imagem-header-left" src="imagens/rosto_cachorro.jpg" alt="">
+            <img class="imagem-header-left" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
         </header>
         <main>
             <form class="conteudo-principal-contato">
-                <label for="nome-completo">Infome seu nome completo</label>
+                <label for="nome-completo">Informe seu nome completo</label>
                 <span id="span-nome" class="span"></span>
                 <input type="text" id="nome-completo" class="input-padrao" name="nome" placeholder="Informe seu nome completo" required>
                 
-                <label for="nome-pet">Infome o nome do seu pet</label>
+                <label for="nome-pet">Informe o nome do seu pet</label>
                 <input type="text" id="nome-pet" class="input-padrao" name="nomePet" placeholder="Informe o nome do seu Pet" required>
 
                 <label for="email">Informe seu email</label>
@@ -47,7 +47,7 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend id="pergunta-options" >Você está interessado em Dogwalker? Qual período é melhor para você?</legend>
+                    <legend id="pergunta-options" >Você está interessado(a) em Dog walker? Qual período é melhor para você?</legend>
                     <select name="periodo">
                         <option>Manhã</option>
                         <option>Tarde</option>
@@ -61,36 +61,38 @@
 
                 <input type="submit" value="Enviar formulário" class="enviar" role="enviar formulário">   
             </form>
-            <table class="tabela">
-                <input type="text" name="filtro" id="filtro-tabela" placeholder="Pesquisa por nome do proprietário ou pet">
-                <thead>
-                    <tr>
-                        <th class="cabecalho-tabela">Nome</th>
-                        <th class="cabecalho-tabela">Nome Pet</th>
-                        <th class="cabecalho-tabela">Email</th>
-                        <th class="cabecalho-tabela">Telefone</th>
-                        <th class="cabecalho-tabela">Mensagem</th>
-                        <th class="cabecalho-tabela">Forma de contato</th>
-                        <th class="cabecalho-tabela">Perído para passeio</th>
-                        <th class="cabecalho-tabela">Interessado(a) em receber novidades por email</th>
-                    </tr>
-                </thead>
-                <tbody class="tabela-body">
-                    <tr class="conteudo-tabela">
-                        <td class="info-nome-proprietario">Barbara Kógus</td>
-                        <td class="info-nome-pet">Preta e Sebastian</td>
-                        <td class="info-email">barbarakogus@gmail.com</td>
-                        <td class="info-telefone">76 565 2274</td>
-                        <td class="info-mensagem">-</td>
-                        <td class="info-contato">WhatsApp</td>
-                        <td class="info-periodo">Manhã</td>
-                        <td class="info-checkbox">Sim</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <button class="buscar-paciente">Burcar paciente</button> 
-            <span id="erro-buscar-paciente" class="span"></span>
+            <div class="tabela-ferramentas">
+                <table class="tabela">
+                    <input type="text" name="filtro" id="filtro-tabela" placeholder="Pesquisar por nome do proprietário ou pet">
+                    <thead>
+                        <tr>
+                            <th class="cabecalho-tabela">Nome</th>
+                            <th class="cabecalho-tabela">Nome Pet</th>
+                            <th class="cabecalho-tabela">Email</th>
+                            <th class="cabecalho-tabela">Telefone</th>
+                            <th class="cabecalho-tabela">Mensagem</th>
+                            <th class="cabecalho-tabela">Forma de contato</th>
+                            <th class="cabecalho-tabela">Período para passeio</th>
+                            <th class="cabecalho-tabela">Interessado(a) em receber novidades por email</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabela-body"> 
+                        <tr class="conteudo-tabela">
+                            <td class="info-nome-proprietario">Barbara Kógus</td>
+                            <td class="info-nome-pet">Preta e Sebastian</td>
+                            <td class="info-email">barbarakogus@gmail.com</td>
+                            <td class="info-telefone">76 565 2274</td>
+                            <td class="info-mensagem">-</td>
+                            <td class="info-contato">WhatsApp</td>
+                            <td class="info-periodo">Manhã</td>
+                            <td class="info-checkbox">Sim</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <button class="buscar-paciente">Buscar paciente</button> 
+                <span id="erro-buscar-paciente" class="span"></span>
+            </div>
 
             <nav>
                 <ul class="menu-navegacao">
@@ -101,15 +103,15 @@
         </main>
         <footer class="footer">
             <h1>Bárbara Kógus</h1>
-            <img class="imagem-footer-right" src="imagens/rosto_cachorro.jpg" alt="">
-            <img class="imagem-footer-left" src="imagens/rosto_cachorro.jpg" alt="">
-            <h2 lang="en">Dogwalker - Dogsitter</h2>
+            <img class="imagem-footer-right" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
+            <img class="imagem-footer-left" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
+            <h2 lang="en">Dog Walker - Dog Sitter</h2>
         </footer>
 
         <script src="index.js"></script>
         <script src="removerPaciente.js"></script>
         <script src="filtrarTabela.js"></script>
-        <script src="bucarPacientes.js"></script>
+        <script src="buscarPacientes.js"></script>
      
     </body>
 </html>

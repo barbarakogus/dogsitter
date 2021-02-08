@@ -1,5 +1,5 @@
 body {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto', sans-serif;
 }
 .header {
     background: linear-gradient(#ADD8E6, #E0FFFF);
@@ -67,10 +67,12 @@ p strong {
     display: inline-block; 
     width: 45%;
     box-sizing: border-box;    
-    border: 2px solid black;
+    border: 2px solid transparent;
     border-radius: 25px;
     vertical-align: top;
     margin-right: 1em;
+    background-color: white;
+    padding: 0 10px;
 }
 .titulo-serviços {
     font-weight: bold;
@@ -194,6 +196,10 @@ select {
     background-color: cornflowerblue;
     transform: scale(1.1);
 }
+.tabela-ferramentas {
+    width: 940px;
+    margin: auto;
+}
 .tabela {
     border: 2px solid black;
     width: 1200px;
@@ -213,12 +219,12 @@ td {
     text-align: center;
 }
 #filtro-tabela {
-    margin: 10px 0 20px 235px;
+    margin: 10px 0;
+    padding: 5px;
     border-radius: 10px; 
     border: none;
     text-align: justify;
-    width: 15%;
-    cursor: auto;
+    width: 30%;
 }
 .span, #numero-maximo {
     font-weight: bold;
@@ -234,7 +240,7 @@ td {
 }
 .buscar-paciente {
     width: 15%;
-    margin: 20px 0 20px 235px;
+    margin: 20px 0;
     padding: 10px 0;
     background: skyblue;
     color: white;
