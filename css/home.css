@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    background: #E0FFFF;
+}
+.titulo-principal{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    text-decoration-line: underline;
+}
+.conteudo-main {
+    width: 940px;
+    margin: 0 auto;
+}
+main p {
+    font-size: 22px;
+    text-align: center;
+    line-height: 2.0;
+}
+p strong {
+    font-weight: bold;
+}
+.serviços {
+    width: 940px;
+    margin: 30px auto;
+}
+.serviços ul {
+    text-align: center;
+    margin: 1em auto;
+}
+.serviços li {
+    display: inline-block; 
+    width: 45%;
+    box-sizing: border-box;    
+    border: 2px solid transparent;
+    border-radius: 25px;
+    vertical-align: top;
+    margin-right: 1em;
+    background-color: white;
+    padding: 0 10px;
+}
+.titulo-serviços {
+    font-weight: bold;
+    font-size: 22px;
+}
+.imagem-dogwalker {
+    width: 30%;
+    border-radius: 30px;
+}
+.imagem-dogsitter {
+    width: 30%;
+    border-radius: 30px;
+}
+.preços-serviços {
+    font-weight: bold;
+}
+.serviços li:hover {
+    border-color: cornflowerblue;
+}
+.serviços li:hover .preços-serviços {
+    color: cornflowerblue;
+    font-size: 26px;
+}
+.serviços li:hover .titulo-serviços {
+    color: cornflowerblue;
+    font-size: 26px;
+}
+nav li {
+    display: inline;
+}
+.menu-navegacao {
+    text-align: center;
+    padding: 30px;
+}
+nav a {
+    font-size: 24px;
+    padding-right: 30px;
+    color: darkblue;
+} 
+nav a:hover {
+    font-weight: bold;
+}
+    
+
+
+
+
+
+
+@media(max-width:768px){
+    .header {
+        font-size: 2em;
+    }
+    .imagem-header-right, .imagem-header-left, .imagem-footer-right, .imagem-footer-left {
+        width: 1em;
+    }
+    .conteudo-main, .serviços, .conteudo-principal-contato {
+        width: auto;
+        margin: 0 1em;
+    }
+    .serviços {
+        display: block;
+    }
+    .serviços li {
+        width: 75%;
+        margin: 1em auto;
+    }
+    nav li {
+        display: block;
+        margin-bottom: 1em;
+    }
+    .galeria-clientes {
+        width: auto;
+    }
+    .titulo-clientes {
+        text-align: center;
+    }
+    .imagens-clientes {
+        border-radius: 30px;
+    }
+    #mensagem {
+        width: 177px;
+        height: 150px;
+    }
+    .enviar {
+        width: 40%;
+    }
+    legend {
+        text-align: justify;
+        line-height: 1.2;
+    }
+}

@@ -1,0 +1,35 @@
+.footer {
+    background: linear-gradient(#E0FFFF, #ADD8E6);
+    text-align: center;
+    font-weight: bold;
+}
+.footer h1 {
+    font-size: 26px;
+    padding: 20px 0;
+    display: inline;
+}
+.footer h2 {
+    font-size: 22px;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer h2:before {
+    content: "\1F43E  ";
+}
+.footer h2:after {
+    content: " 	\1F43E";
+}
+.imagem-footer-right {
+    width: 70px;
+    border-radius: 30px;
+    position: absolute;
+    vertical-align: top;
+    right: 2em;
+}
+.imagem-footer-left {
+    width: 70px;
+    border-radius: 30px;
+    position: absolute;
+    vertical-align: top;
+    left: 2em;
+}
