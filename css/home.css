@@ -4,13 +4,13 @@ body {
 main {
     background: #E0FFFF;
 }
-.titulo-principal{
+.titulo__principal{
     font-size: 24px;
     text-align: center;
     padding: 20px;
     text-decoration-line: underline;
 }
-.conteudo-main {
+.conteudo__main {
     width: 940px;
     margin: 0 auto;
 }
@@ -24,111 +24,97 @@ p strong {
 }
 .serviços {
     width: 940px;
-    margin: 30px auto;
+    margin: 2rem auto;
 }
-.serviços ul {
-    text-align: center;
-    margin: 1em auto;
+.servicos__caixa {
+    display: flex;
+    justify-content: space-between;
 }
-.serviços li {
+.servico__lista{
     display: inline-block; 
     width: 45%;
     box-sizing: border-box;    
     border: 2px solid transparent;
     border-radius: 25px;
     vertical-align: top;
-    margin-right: 1em;
     background-color: white;
-    padding: 0 10px;
 }
-.titulo-serviços {
+.titulo__serviços {
     font-weight: bold;
     font-size: 22px;
 }
-.imagem-dogwalker {
+.imagem__dogwalker {
     width: 30%;
     border-radius: 30px;
 }
-.imagem-dogsitter {
+.imagem__dogsitter {
     width: 30%;
     border-radius: 30px;
 }
-.preços-serviços {
+.preços__serviços {
     font-weight: bold;
 }
 .serviços li:hover {
     border-color: cornflowerblue;
 }
-.serviços li:hover .preços-serviços {
+.serviços li:hover .preços__serviços {
     color: cornflowerblue;
     font-size: 26px;
 }
-.serviços li:hover .titulo-serviços {
+.serviços li:hover .titulo__serviços {
     color: cornflowerblue;
     font-size: 26px;
 }
-nav li {
-    display: inline;
-}
-.menu-navegacao {
-    text-align: center;
-    padding: 30px;
+.menu__lista {
+    height: 3rem;  
+    width: 940px;
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem 0;
 }
 nav a {
-    font-size: 24px;
-    padding-right: 30px;
     color: darkblue;
+    font-size: 24px;
+    text-align: center;
 } 
 nav a:hover {
     font-weight: bold;
 }
     
-
-
-
-
-
-
 @media(max-width:768px){
-    .header {
-        font-size: 2em;
+    .titulo__principal {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        line-height: 1.5em;
     }
-    .imagem-header-right, .imagem-header-left, .imagem-footer-right, .imagem-footer-left {
-        width: 1em;
-    }
-    .conteudo-main, .serviços, .conteudo-principal-contato {
+    .conteudo__main, .serviços, .conteudo__principal--contato {
         width: auto;
         margin: 0 1em;
     }
     .serviços {
         display: block;
     }
-    .serviços li {
-        width: 75%;
-        margin: 1em auto;
+    .servicos__caixa {
+        flex-direction: column;
     }
-    nav li {
-        display: block;
-        margin-bottom: 1em;
+    .servico__lista {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 2rem;
     }
-    .galeria-clientes {
+    .menu__lista {
         width: auto;
+        height: 6rem;
+        margin: 0 1rem;
+        flex-direction: column;   
+        justify-content: space-between;        
     }
-    .titulo-clientes {
-        text-align: center;
-    }
-    .imagens-clientes {
-        border-radius: 30px;
-    }
-    #mensagem {
-        width: 177px;
-        height: 150px;
-    }
-    .enviar {
-        width: 40%;
-    }
-    legend {
-        text-align: justify;
-        line-height: 1.2;
+    
+    nav a {
+        align-self: inherit;
+        font-size: 1.5rem;
+        text-decoration: none;
+        
     }
 }

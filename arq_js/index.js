@@ -1,6 +1,6 @@
 const enviarFormulario = document.querySelector(".enviar");
 
-const tabelaBody = document.querySelector(".tabela-body");
+const tabelaBody = document.querySelector(".tabela__body");
 
 let contadorMensagem = 0;
 
@@ -44,16 +44,16 @@ function obterDadosDoFormulario(form){
 function criarTr (cliente){
     const tr = document.createElement("tr");
 
-    tr.appendChild(criarTd(cliente.nome, "info-nome-proprietario"));
-    tr.appendChild(criarTd(cliente.nomePet, "info-nome-pet"));
-    tr.appendChild(criarTd(cliente.email, "info-email"));
-    tr.appendChild(criarTd(cliente.telefone, "info-telefone"));
-    tr.appendChild(criarTd(cliente.mensagem, "info-mensagem"));
-    tr.appendChild(criarTd(cliente.contato, "info-contato"));
-    tr.appendChild(criarTd(cliente.periodo, "info-periodo"));
-    tr.appendChild(criarTd(cliente.checkbox, "info-checkbox"));
+    tr.appendChild(criarTd(cliente.nome, "info__nome__proprietario"));
+    tr.appendChild(criarTd(cliente.nomePet, "info__nome__pet"));
+    tr.appendChild(criarTd(cliente.email, "info__email"));
+    tr.appendChild(criarTd(cliente.telefone, "info__telefone"));
+    tr.appendChild(criarTd(cliente.mensagem, "info__mensagem"));
+    tr.appendChild(criarTd(cliente.contato, "info__contato"));
+    tr.appendChild(criarTd(cliente.periodo, "info__periodo"));
+    tr.appendChild(criarTd(cliente.checkbox, "info__checkbox"));
 
-    tr.classList.add("conteudo-tabela");
+    tr.classList.add("conteudo__tabela");
 
     return tr;
 }

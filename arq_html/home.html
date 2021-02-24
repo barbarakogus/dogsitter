@@ -5,65 +5,62 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Bárbara Kógus</title>
-        <link href="reset.css" rel="stylesheet" >
-        <link href="home.html" rel="stylesheet">
-        <link href="contato.css" rel="stylesheet">
-        <link href="./css/galeria.css" rel="stylesheet">
-        <link href="./css/cabecalho" rel="stylesheet">
-        <link href="./css/rodape" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet" >
+        <link href="../css/home.css" rel="stylesheet">
+        <link href="../css/contato.css" rel="stylesheet">
+        <link href="../css/galeria.css" rel="stylesheet">
+        <link href="../css/cabecalho.css" rel="stylesheet">
+        <link href="../css/rodape.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-        
     </head>
     <body>
         <header class="header">
-            <h1>Bárbara Kógus</h1>
-            <h2 lang="en">Dog Walker - Dog Sitter</h2>
-            <img class="imagem-header-right" src="imagens/rosto_cachorro.jpg" alt="Logotipo do site, trata-se do rosto de um cachorro">
-            <img class="imagem-header-left" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true"> <!-- aria-hidden ignora elementos para o leitor de tela--> 
+            <h1 class="header__titulo">Bárbara Kógus</h1>
+            <h2 class="header__descricao" lang="en">Dog Walker - Dog Sitter</h2>
+            <img class="imagem__header--right" src="../imagens/rosto_cachorro.jpg" alt="Logotipo do site, trata-se do rosto de um cachorro">
+            <img class="imagem__header--left" src="../imagens/rosto_cachorro.jpg" alt="" aria-hidden="true"> <!-- aria-hidden ignora elementos para o leitor de tela--> 
         </header>
         <main>
-            <h3 class="titulo-principal">Uma breve apresentação sobre o meu trabalho</h3>
-            <div class="conteudo-main">
+            <h3 class="titulo__principal">Uma breve apresentação sobre o meu trabalho</h3>
+            <div class="conteudo__main">
                 <p>A mudança para a Suécia me permitiu procurar novas oportunidades. Como sempre fui apaixoda por animais, crescida e criada, trabalhar como cuidadora me pareceu ser uma excitante aventura.</p>
                 <p><strong>Cuidar de animais se apresentou para mim como uma troca diária de amor!</strong></p>
                 <p>Dou a eles todo carinho e atenção que posso.</p>
                 <p>Trato as caminhadas como um momento de lazer e diversão do animal. Esse é o momento dele e estamos dispostos a fazer o que a natureza dele deseja. Se o seu animal gosta de caminhadas longas, é isso que ele terá. Se ele gosta de brincar no parque com outros cachorros, será isso que vamos fazer.</p>
                 <p>E quando os recebo em minha casa eles se tornam parte da família.</p>
             </div>
-
             <div class="serviços">
-                <h4 class="titulo-principal">Serviços oferecidos aos clientes</h4>
-                <ul>
-                    <li>
-                        <p class="titulo-serviços" lang="en">Dog Walker</p>
-                        <img class="imagem-dogwalker" src="imagens/dogwalker.jpg" alt="">
+                <h4 class="titulo__principal">Serviços oferecidos aos clientes</h4>
+                <ul class="servicos__caixa">
+                    <li class="servico__lista">
+                        <p class="titulo__serviços" lang="en">Dog Walker</p>
+                        <img class="imagem__dogwalker" src="../imagens/dogwalker.jpg" alt="">
                         <p>Pegamos e devolvemos o cliente em casa, inclui limpeza das patinhas.</p>
-                        <p class="preços-serviços">150 SEK / hora</p>
+                        <p class="preços__serviços">150 SEK / hora</p>
                     </li>
-                    <li>
-                        <p class="titulo-serviços" lang="en">Dog Sitter</p>
-                        <img class="imagem-dogsitter" src="imagens/cachorro_dormindo.jpg" alt="">
+                    <li class="servico__lista">
+                        <p class="titulo__serviços" lang="en">Dog Sitter</p>
+                        <img class="imagem__dogsitter" src="../imagens/cachorro_dormindo.jpg" alt="">
                         <p>Recebo seu cachorro em minha casa, isso inclui alimentação e passeios, conforme a necessidade do cliente.</p>
-                        <p class="preços-serviços">250 SEK / dia e pernoite</p>
+                        <p class="preços__serviços">250 SEK / dia e pernoite</p>
                     </li>
                 </ul>
             </div>
-
-            <nav>
-                <ul class="menu-navegacao">
-                    <li><a href="galeria.html">Nossa galeria de Cãolientes felizes</a></li>
-                    <li><a href="contato.html">Gostou?! Entre em contato aqui!</a></li>
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="galeria.html">Nossa galeria de Cãolientes felizes</a></li>
+                    <li class="menu__item"><a href="contato.html">Gostou?! Entre em contato aqui!</a></li>
                 </ul>
             </nav>
         </main>
         <footer class="footer">
-            <h1>Bárbara Kógus</h1>
-            <img class="imagem-footer-right" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
-            <img class="imagem-footer-left" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
-            <h2 lang="en">Dog Walker - Dog Sitter</h2>
+            <h1 class="footer__titulo">Bárbara Kógus</h1>
+            <img class="imagem__footer--right" src="../imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
+            <img class="imagem__footer--left" src="../imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
+            <h2 class="footer__descricao" lang="en">Dog Walker - Dog Sitter</h2>
         </footer>
     </body>
 </html>

@@ -1,8 +1,8 @@
-.conteudo-principal-contato  {
+.conteudo__principal__contato  {
     width: 940px;
     margin: 0 auto;
 }
-.input-padrao {
+.input__padrao {
     display: block;
     margin: 10px 0 20px 0; 
     width: 30%;
@@ -16,7 +16,7 @@ form label, legend {
     font-size: 20px;
     display: inline;
 }
-.input-radio {
+.input__radio {
     margin: 10px 10px 0 0;
 }
 select {
@@ -42,7 +42,7 @@ select {
     background-color: cornflowerblue;
     transform: scale(1.1);
 }
-.tabela-ferramentas {
+.tabela__ferramentas {
     width: 940px;
     margin: auto;
 }
@@ -51,12 +51,12 @@ select {
     width: 1200px;
     margin: 0 auto;
 }
-.cabecalho-tabela {
+.cabecalho__tabela {
     padding: 10px 0 10px 10px;
     font-weight: bold;
     font-size: 18px;
 }
-.tabela-body {
+.tabela__body {
     border: 1px solid black;
 }
 td {
@@ -84,7 +84,7 @@ td {
 .invisivel {
     display: none;
 }
-.buscar-paciente {
+.buscar__paciente {
     width: 15%;
     margin: 20px 0;
     padding: 10px 0;
@@ -94,6 +94,26 @@ td {
     border: none;
     cursor: pointer;
 }
-.buscar-paciente:hover {
+.buscar__paciente:hover {
     font-weight: bold;
+}
+
+@media(max-width:768px){
+    #mensagem {
+        width: 177px;
+        height: 150px;
+    }
+    .enviar {
+        width: 40%;
+    }
+    legend {
+        text-align: justify;
+        line-height: 1.2;
+    }
+    .tabela {
+        width: auto;     
+    }
+    .tabela__body {
+        border: none;
+    }
 }

@@ -1,22 +1,43 @@
-.imagens-clientes {
-    width: 27%;
+.imagens__clientes {
+    border-radius: 55px;
     padding: 0 1em;
-    border-radius: 50px;
+    width: 27%;
 }
-.imagens-clientes:hover {
+.imagens__clientes:hover {
     width: 33%;
 }
-.galeria-clientes {
-    width: 940px;
+.galeria__clientes {
     margin: 1em auto;
+    width: 940px;
 }
 li {
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
 }
-.titulo-clientes {
-    font-size: 22px;
+.titulo__clientes {
+    font-size: 1.7rem;
     font-weight: bold;
-    text-align: left;
     margin: 20px 0 0 0;
+    text-align: left;
+}
+
+@media(max-width:768px){
+    .galeria__clientes {
+        margin: 0 auto;
+        width: auto;
+    }
+    .titulo__clientes {
+        margin: 0;
+        text-align: center;
+    }
+    .lista__clientes {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagens__clientes {
+        align-self: center;
+        border-radius: 0px;
+        padding: 1.5rem 0;
+        width: 70%;
+    }
 }

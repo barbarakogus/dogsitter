@@ -1,4 +1,4 @@
-const buscarPaciente = document.querySelector(".buscar-paciente");
+const buscarPaciente = document.querySelector(".buscar__paciente");
 
 const spanBuscarPaciente = document.querySelector("#erro-buscar-paciente");
 

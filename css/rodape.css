@@ -3,12 +3,12 @@
     text-align: center;
     font-weight: bold;
 }
-.footer h1 {
+.footer__titulo {
     font-size: 26px;
     padding: 20px 0;
     display: inline;
 }
-.footer h2 {
+.footer__descricao {
     font-size: 22px;
     padding: 20px 0;
     text-align: center;
@@ -19,17 +19,42 @@
 .footer h2:after {
     content: " 	\1F43E";
 }
-.imagem-footer-right {
+.imagem__footer--right {
     width: 70px;
     border-radius: 30px;
     position: absolute;
     vertical-align: top;
     right: 2em;
 }
-.imagem-footer-left {
+.imagem__footer--left {
     width: 70px;
     border-radius: 30px;
     position: absolute;
     vertical-align: top;
     left: 2em;
+}
+@media(max-width:768px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer__titulo, .footer__descricao {
+        font-size: 1.5rem;
+        text-align: start;
+        margin-left: 2rem;
+    }
+    .footer__titulo:after {
+        content: " 	\1F43E";
+    }
+    .footer__descricao {
+        padding-top: 0;
+    }
+    .imagem__footer--right {
+        width: 3.3rem;
+        
+    }
+    .imagem__footer--left, .footer h2:before, .footer h2:after {
+        display: none;
+    }   
 }

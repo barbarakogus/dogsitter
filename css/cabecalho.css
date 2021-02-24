@@ -1,14 +1,14 @@
 .header {
     background: linear-gradient(#ADD8E6, #E0FFFF);
-    text-align: center;
     font-weight: bold;
+    text-align: center;
 }
-.header h1 {
-    font-size: 26px;
+.header__titulo {
+    font-size: 2rem;
     padding: 20px 0;
 }
 .header h2 {
-    font-size: 22px;
+    font-size: 1.5rem;
     padding-bottom: 20px;
 }
 .header h2:before {
@@ -17,17 +17,34 @@
 .header h2:after {
     content: " 	\1F43E";
 }
-.imagem-header-right {
-    width: 70px;
+.imagem__header--right {
     border-radius: 30px;
     position: absolute;
+    right: 30px;    
     top: 20px;
-    left: 30px;
+    width: 70px;
 }
-.imagem-header-left {
-    width: 70px;
+.imagem__header--left {
     border-radius: 30px;
+    left: 30px;
     position: absolute;
     top: 20px;
-    right: 30px;
+    width: 70px;
+}
+
+@media(max-width:768px){
+    .header__titulo, .header__descricao {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        text-align: start;
+    }
+    .header__titulo:after {
+        content: " 	\1F43E";
+    }
+    .imagem__header--right {
+        width: 3.3rem;
+    }
+    .imagem__header--left, .header h2:before, .header h2:after {
+        display: none;
+    }   
 }

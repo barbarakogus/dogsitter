@@ -3,55 +3,58 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width initial-scale:1.0">
         <title>Galeria Cãolientes</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style_barbara.css">
+        <link href="../css/reset.css" rel="stylesheet" >
+        <link href="../css/home.css" rel="stylesheet">
+        <link href="../css/contato.css" rel="stylesheet">
+        <link href="../css/galeria.css" rel="stylesheet">
+        <link href="../css/cabecalho.css" rel="stylesheet">
+        <link href="../css/rodape.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     </head> 
     <body>
         <header class="header">
-            <h1>Bárbara Kógus</h1>
-            <h2 lang="en">Dog Walker - Dog Sitter</h2>
-            <img class="imagem-header-right" src="imagens/rosto_cachorro.jpg" alt="Logotipo do site, trata-se do rosto de um cachorro">
-            <img class="imagem-header-left" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
+            <h1 class="header__titulo">Bárbara Kógus</h1>
+            <h2 class="header__descricao" lang="en">Dog Walker - Dog Sitter</h2>
+            <img class="imagem__header--right" src="../imagens/rosto_cachorro.jpg" alt="Logotipo do site, trata-se do rosto de um cachorro">
+            <img class="imagem__header--left" src="../imagens/rosto_cachorro.jpg" alt="" aria-hidden="true"> <!-- aria-hidden ignora elementos para o leitor de tela--> 
         </header>
         <main>
-            <h3 class="titulo-principal">Nossa galeria de fotos</h3>
-            <ul class="galeria-clientes">
-                <li>
-                    <h4 class="titulo-clientes">Lipe</h4>
-                    <img src="imagens/lipe5.JPG" class="imagens-clientes" alt="O cachorro Lipe está sentado em uma cadeira curtindo o sol na varanda">
-                    <img src="imagens/lipe3.JPG" class="imagens-clientes" alt="Cachorro Lipe está no colo da Bárbara Kógus">
-                    <img src="imagens/lipe4.jpg" class="imagens-clientes" alt="Cachorro Lipe está sentando na grama em frente ao lago em um dia de sol">
+            <h3 class="titulo__principal">Nossa galeria de fotos</h3>
+            <ul class="galeria__clientes">
+                <li class="lista__clientes">
+                    <h4 class="titulo__clientes">Lipe</h4>
+                    <img src="../imagens/lipe5.JPG" class="imagens__clientes" alt="O cachorro Lipe está sentado em uma cadeira curtindo o sol na varanda">
+                    <img src="../imagens/lipe3.JPG" class="imagens__clientes" alt="Cachorro Lipe está no colo da Bárbara Kógus">
+                    <img src="../imagens/lipe4.jpg" class="imagens__clientes" alt="Cachorro Lipe está sentando na grama em frente ao lago em um dia de sol">
                    
                 </li>
-                <li>
-                    <h4 class="titulo-clientes">Ella</h4>
-                    <img src="imagens/ella1.JPG" class="imagens-clientes" alt="Cachorra Ella está no sofá brincando com um bichinho de pelúcia">
-                    <img src="imagens/ella2.JPG" class="imagens-clientes" alt="Cachorra ela está em sua cama, lançando olhares fofos">
-                    <img src="imagens/ella3.jpg" class="imagens-clientes" alt="Cachorra Ella está na cama embaixo do edredom">
+                <li class="lista__clientes">
+                    <h4 class="titulo__clientes">Ella</h4>
+                    <img src="../imagens/ella1.JPG" class="imagens__clientes" alt="Cachorra Ella está no sofá brincando com um bichinho de pelúcia">
+                    <img src="../imagens/ella2.JPG" class="imagens__clientes" alt="Cachorra ela está em sua cama, lançando olhares fofos">
+                    <img src="../imagens/ella3.jpg" class="imagens__clientes" alt="Cachorra Ella está na cama embaixo do edredom">
                 </li>
-                <li>
-                    <h4 class="titulo-clientes">Pudim</h4>
-                    <img src="imagens/pudim1.jpg" class="imagens-clientes" alt="Cachorro Pudin está sentado em um parque durante um dia de sol">
-                    <img src="imagens/pudim2.jpg" class="imagens-clientes" alt="Cachorro Pudin, feliz com a lingua pra fora durante um passeio no parque">
-                    <img src="imagens/pudim3.JPG" class="imagens-clientes" alt="Cachorro Pudin em sua cama pronto para dormir">
+                <li class="lista__clientes">
+                    <h4 class="titulo__clientes">Pudim</h4>
+                    <img src="../imagens/pudim1.jpg" class="imagens__clientes" alt="Cachorro Pudin está sentado em um parque durante um dia de sol">
+                    <img src="../imagens/pudim2.jpg" class="imagens__clientes" alt="Cachorro Pudin, feliz com a lingua pra fora durante um passeio no parque">
+                    <img src="../imagens/pudim3.JPG" class="imagens__clientes" alt="Cachorro Pudin em sua cama pronto para dormir">
                 </li>
             </ul>
-
-            <nav>
-                <ul class="menu-navegacao">
-                    <li><a href="contato.html">Gostou?! Entre em contato aqui!</a></li>
-                    <li><a href="home.html">Volte a página inicial</a></li>
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="home.html">Volte a página inicial</a></li>
+                    <li class="menu__item"><a href="contato.html">Gostou?! Entre em contato aqui!</a></li>
                 </ul>
             </nav>
         </main>
         <footer class="footer">
-            <h1>Bárbara Kógus</h1>
-            <img class="imagem-footer-right" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
-            <img class="imagem-footer-left" src="imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
-            <h2 lang="en">Dog Walker - Dog Sitter</h2>
+            <h1 class="footer__titulo">Bárbara Kógus</h1>
+            <img class="imagem__footer--right" src="../imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
+            <img class="imagem__footer--left" src="../imagens/rosto_cachorro.jpg" alt="" aria-hidden="true">
+            <h2 class="footer__descricao" lang="en">Dog Walker - Dog Sitter</h2>
         </footer>
     </body>
 </html>
