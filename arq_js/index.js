@@ -117,6 +117,9 @@ function maximoCaracteresTextArea(){
 
         if(contadorMensagem < 0){
             contadorMensagem = 0;
+        }
+        if(contadorMensagem >= 50){
+            contadorMensagem = 50
         }    
         caracteres.innerHTML = "(" + contadorMensagem + ")";
     })
@@ -126,6 +129,7 @@ maximoCaracteresTextArea();
 
 function adicionarClienteTabela (cliente){
     const clienteTr = criarTr(cliente);
+    contadorMensagem = 0;
     tabelaBody.appendChild(clienteTr);
 }
 

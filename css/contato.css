@@ -32,7 +32,7 @@ select {
     width: 30%;
     background: skyblue;
     font-weight: bold;
-    color: white;
+    color: rgb(17, 14, 187);
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -43,10 +43,10 @@ select {
     transform: scale(1.1);
 }
 .tabela__ferramentas {
-    width: 940px;
     margin: auto;
 }
 .tabela {
+    display: block;
     border: 2px solid black;
     width: 1200px;
     margin: 0 auto;
@@ -65,12 +65,13 @@ td {
     text-align: center;
 }
 #filtro-tabela {
-    margin: 10px 0;
-    padding: 5px;
+    margin: 10px 23em;
+    padding: 10px;
     border-radius: 10px; 
     border: none;
     text-align: justify;
-    width: 30%;
+    width: 17%;
+    color: #000000;
 }
 .span, #numero-maximo {
     font-weight: bold;
@@ -85,11 +86,11 @@ td {
     display: none;
 }
 .buscar__paciente {
-    width: 15%;
-    margin: 20px 0;
+    width: 17%;
+    margin: 20px 23em;
     padding: 10px 0;
     background: skyblue;
-    color: white;
+    color: rgb(17, 14, 187);
     border-radius: 20px;
     border: none;
     cursor: pointer;
