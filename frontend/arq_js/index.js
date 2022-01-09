@@ -14,8 +14,21 @@ enviarFormulario.addEventListener("click", function(event){
         return;
     };
 
-    adicionarClienteTabela (cliente);
-    
+    fetch("http://localhost:3000/clients", {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        method: "POST",
+        body: JSON.stringify(cliente)
+    })
+    .then(response=>response.json())
+    .then((data)=> {
+        cliente.id = data;
+        adicionarClienteTabela(cliente);
+    })
+    .catch(function(res){ console.log(res) })
+
     form.reset();
     const caracteres = document.querySelector("#numero-maximo");
     caracteres.innerHTML = "";
@@ -24,14 +37,14 @@ enviarFormulario.addEventListener("click", function(event){
 
 function obterDadosDoFormulario(form){
     const cliente = {
-        nome: form.nome.value,
-        nomePet: form.nomePet.value,
+        name: form.nome.value,
+        namePet: form.nomePet.value,
         email: form.email.value,
-        telefone: form.telefone.value,
-        mensagem: form.mensagem.value,
-        contato: form.contato.value,
-        periodo: form.periodo.value,
-        checkbox: form.cheackbox.checked ? "sim" : "não" //if ternário(?): if checkbox.checked for true, assume "sim", se n "não". Usado para validações pequenas, simples.
+        phone: form.telefone.value,
+        message: form.mensagem.value,
+        contactWay: form.contato.value,
+        period: form.periodo.value,
+        receiveNotifications: form.cheackbox.checked ? "sim" : "não" //if ternário(?): if checkbox.checked for true, assume "sim", se n "não". Usado para validações pequenas, simples.
     }
   //  if(cliente.checkbox){
   //      cliente.checkbox = "sim";
@@ -44,14 +57,15 @@ function obterDadosDoFormulario(form){
 function criarTr (cliente){
     const tr = document.createElement("tr");
 
-    tr.appendChild(criarTd(cliente.nome, "info__nome__proprietario"));
-    tr.appendChild(criarTd(cliente.nomePet, "info__nome__pet"));
+    tr.appendChild(criarTd(cliente.id, "info__id"));
+    tr.appendChild(criarTd(cliente.name, "info__nome__proprietario"));
+    tr.appendChild(criarTd(cliente.namePet, "info__nome__pet"));
     tr.appendChild(criarTd(cliente.email, "info__email"));
-    tr.appendChild(criarTd(cliente.telefone, "info__telefone"));
-    tr.appendChild(criarTd(cliente.mensagem, "info__mensagem"));
-    tr.appendChild(criarTd(cliente.contato, "info__contato"));
-    tr.appendChild(criarTd(cliente.periodo, "info__periodo"));
-    tr.appendChild(criarTd(cliente.checkbox, "info__checkbox"));
+    tr.appendChild(criarTd(cliente.phone, "info__telefone"));
+    tr.appendChild(criarTd(cliente.message, "info__mensagem"));
+    tr.appendChild(criarTd(cliente.contactWay, "info__contato"));
+    tr.appendChild(criarTd(cliente.period, "info__periodo"));
+    tr.appendChild(criarTd(cliente.receiveNotifications, "info__checkbox"));
 
     tr.classList.add("conteudo__tabela");
 
@@ -68,7 +82,7 @@ function criarTd (dado,classe){
 function validarFormulario (cliente){
     let estaValido = true;
     const span = document.querySelectorAll(".span");   
-    if(cliente.nome.length == 0){ //apenas no JS "" == 0;
+    if(cliente.name.length == 0){ //apenas no JS "" == 0;
         span[0].textContent = "O campo nome é indispensável";
         estaValido = false;
     }else {
@@ -84,10 +98,10 @@ function validarFormulario (cliente){
     else{
         span[1].textContent = "";
     }
-    if(cliente.telefone.length == ""){
+    if(cliente.phone.length == ""){
         span[2].textContent = "O campo telefone é indispensável";
         estaValido = false;
-    }else if(isNaN(cliente.telefone)){
+    }else if(isNaN(cliente.phone)){
         span[2].textContent = "O campo telefone deve conter apenas números";
         estaValido = false;
     }else{
